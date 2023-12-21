@@ -46,6 +46,31 @@ img {
     height: auto;
 }
 
+#project-detail {
+    padding: 2em;
+}
+
+#project-detail h1 {
+    color: #333;
+}
+
+/* Ensure the images fit within the page */
+#project-detail img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for 'Back to Portfolio' link */
+header a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #333;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
     #navbar ul li {
