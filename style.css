@@ -60,6 +60,57 @@ img {
     height: auto;
 }
 
+/* Previous CSS styles */
+
+/* Styles for Skills Section */
+#skills {
+    padding: 2em;
+    text-align: center;
+}
+
+.skill {
+    margin-bottom: 1em;
+}
+
+.skill span {
+    font-weight: bold;
+}
+
+.skill-level {
+    height: 20px;
+    background-color: #4CAF50;
+    width: 0;
+    transition: width 1s;
+}
+
+/* Trigger animation when in viewport - JavaScript can be used to add a class when in view */
+.skill-level[data-level] {
+    width: attr(data-level);
+}
+
+/* Styles for Get In Touch Section */
+#contact {
+    padding: 2em;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.social-buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-buttons a:hover {
+    background-color: #4CAF50;
+}
+
+/* Responsive and additional styles */
+
 /* Style for 'Back to Portfolio' link */
 header a {
     color: #4CAF50;
