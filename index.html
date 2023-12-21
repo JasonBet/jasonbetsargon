@@ -1,219 +1,51 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">About Me</a></li>
-							<li><a href="#one">Projects</a></li>
-							<li><a href="#two">Skills</a></li>
-							<li><a href="#three">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+    <section id="about">
+        <h1>John Doe</h1>
+        <p>Software Engineer | Web Developer | Tech Enthusiast</p>
+        <img src="profile.jpg" alt="John Doe">
+        <p>Welcome to my portfolio! I am a Software Engineer specializing in building and optimizing web applications...</p>
+    </section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Description of Project 1...</p>
+        </div>
+        <!-- Repeat for other projects -->
+    </section>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Jason Betsargon</h1>
-							<p>I am a passionate Software Engineer. <br />
-							I focus on programming functionality in my games such as player <br/>
-							player mechanics/movement, AI, physics, and more.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Project Samples</a></li>
-							</ul>
-						</div>
-					</section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="marion.html" class="image"><img src="images/marion1.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Dungeon Crawler - Marion</h2>
-									<p>Programmed C# scripts in Unity to control player and enemy movement, combat, and health system. 
-										Worked alongside artist to design the final boss level. Singlehandedly 
-										developed the health system and corresponding UI to display current player health. </p>
-									<ul class="actions">
-										<li><a href="marion.html" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="warehouse demolition.html" class="image"><img src="images/vlcsnap-2022-09-05-23h18m21s183.png" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Warehouse Demolition Demo</h2>
-									<p>Designed a 3D demo level for a demolition game. Used Blueprint to script player & 
-										game mechanics. Imported assets from Unreal Engine Marketplace. Used 3D vectors 
-										to allow player to throw balls.</p>
-									<ul class="actions">
-										<li><a href="warehouse demolition.html" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="obstacle run.html" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Classy Clash</h2>
-									<p>COMING SOON.</p>
-									<ul class="actions">
-										<li><a href="obstacle run.html" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>SKILLS</h2>
-							<p>I am constantly advancing my skills in these tools and languages to develop fun and exciting features</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>C++</h3>
-									<p>
-										<ul>
-											<li>Programming in C++ for 4 years</li>
-											<li>Scripting in Unreal Engine</li>
-											<li>Proficient in Data Structures & Algorithms</li>
-										</ul>
-									</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Unreal Engine</h3>
-									<p>
-										<ul>
-											<li>Developed in Unreal Engine for 1 year</li>
-											<li>Scripted using C++ and Blueprint</li>
-											<li>Completed 3 games</li>
-										</ul>
-									</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>C#</h3>
-									<p>
-										<ul>
-											<li>Programming in C# for 1 year</li>
-											<li>Scripting in Unity</li>
-										</ul>
-									</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Unity</h3>
-									<p>
-										<ul>
-											<li>Developed in Unity for 1 year</li>
-											<li>Scripted using C#</li>
-											<li>Completed 1 large games</li>
-											<li>Completed several minigames</li>
-										</ul>
-									</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Software Development Life Cycle</h3>
-									<p>Applied Agile SCRUM development methodology in Marion game. This involved: 
-									<ul>
-										<li>2 Week sprints</li>
-										<li>Agile Gantt Chart</li>
-										<li>Use Case Diagram</li>
-										<li>Deployment Diagram</li>
-									</ul>
-									Slideshow presentation containing these diagrams & charts can be found 
-									<a href = "https://docs.google.com/presentation/d/1pOGmqnr9TweBfdFLP4l63LkqtCLtgBRUUoQ4bgDobNs/edit#slide=id.g1f87997393_0_782" 
-									   target = "_blank">here</a>
-									</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>CS & 3D Math</h3>
-									<p>Highlight of important Computer Science and 3D Math coursework and concepts learned: 
-									<ul>
-										<li>Game Development</li>
-										<li>Game Design</li>
-										<li>Software Engineering</li>
-										<li>Machine Learning</li>
-										<li>Introduction to Artificial Intelligence</li>
-										<li>Formal Languages and Automata Theory</li>
-										<li>Linear Algebra</li>
-										<li>Engineering Physics</li>
-									</ul>
-									</p>
-								</section>
-							</div>
-						</div>
-					</section>
-
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>If you would like to inquire about my skills please contact me via the email provided below.</p>
-							<div>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Work Locations</h3>
-											<span>REMOTE, San Diego, Los Angeles, Irvine</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">jasonbetsargon@gmail.com</a>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://github.com/JasonBet" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.linkedin.com/in/jason-betsargon/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <footer>
+        <p>&copy; 2023 John Doe</p>
+    </footer>
+</body>
 </html>
