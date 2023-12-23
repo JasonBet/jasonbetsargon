@@ -69,23 +69,60 @@ img {
 }
 
 .skill {
+    display: flex;
+    align-items: center;
     margin-bottom: 1em;
 }
 
 .skill span {
+    width: 100px; /* Adjust as needed */
     font-weight: bold;
 }
 
 .skill-level {
+    flex-grow: 1;
+    margin-left: 10px;
     height: 20px;
-    background-color: #4CAF50;
-    width: 0;
-    transition: width 1s;
+    background-color: #ddd;
+    position: relative;
 }
 
-/* Trigger animation when in viewport - JavaScript can be used to add a class when in view */
-.skill-level[data-level] {
-    width: attr(data-level);
+.skill-level::after {
+    content: attr(data-level);
+    position: absolute;
+    right: 0;
+    padding: 0 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
+    transition: width 1s ease-in-out;
+}
+
+/* Different colors for different skill levels */
+.skill[data-type="expert"] .skill-level::after {
+    background-color: #4CAF50; /* Green for expert */
+}
+
+.skill[data-type="intermediate"] .skill-level::after {
+    background-color: #FFC107; /* Yellow for intermediate */
+}
+
+.skill[data-type="beginner"] .skill-level::after {
+    background-color: #FF5722; /* Red for beginner */
+}
+
+/* Tooltips or Descriptions (optional) */
+.skill:hover::after {
+    content: "Description or proficiency level";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* Styles for Get In Touch Section */
